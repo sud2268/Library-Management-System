@@ -29,9 +29,11 @@ public class reset extends javax.swing.JFrame {
         String a1=jTextField1.getText();
         String sql="select * from account where username ='"+a1+"'";
         try{
+            pst=conn.prepareStatement(sql);
+            rs=pst.executeQuery();
         if(rs.next()){
-            jTextField2.setText(rs.getString(1));
-            jTextField2.setText(rs.getString(4));
+            jTextField2.setText(rs.getString(2));
+            jTextField3.setText(rs.getString(4));
             rs.close();
             pst.close();
             
@@ -47,13 +49,13 @@ public class reset extends javax.swing.JFrame {
     }    
     public void retrieve(){
         String a1=jTextField1.getText();
-        String a2=jTextField2.getText();
+        String a2=jTextField4.getText();
         String sql="select * from account where username ='"+a1+"'";
         try{
             pst=conn.prepareStatement(sql);
             rs=pst.executeQuery();
             if(rs.next()){
-                jTextField5.setText(rs.getString(5));
+                jTextField5.setText(rs.getString(3));
             }
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null,e);
@@ -198,7 +200,7 @@ public class reset extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
-        signup ob=new signup();
+        login ob=new login();
         ob.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
