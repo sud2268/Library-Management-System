@@ -86,15 +86,13 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("reset password");
+        jButton3.setText("Forgot  password");
         jButton3.setToolTipText("");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-
-        jPasswordField1.setText("jPasswordField1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -113,9 +111,8 @@ public class login extends javax.swing.JFrame {
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(38, 38, 38)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPasswordField1)
-                            .addComponent(jTextField1))
-                        .addGap(9, 9, 9))
+                            .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+                            .addComponent(jTextField1)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
@@ -159,7 +156,7 @@ public class login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(118, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -184,6 +181,7 @@ public class login extends javax.swing.JFrame {
             pst.close();
             setVisible(false);
             loading ob=new loading();
+            ob.setUpLoading();
             ob.setVisible(true);
             
         }else

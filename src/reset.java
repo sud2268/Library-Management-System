@@ -47,7 +47,7 @@ public class reset extends javax.swing.JFrame {
             
         }
     }    
-    public void retrieve(){
+     public void retrieve(){
         String a1=jTextField1.getText();
         String a2=jTextField4.getText();
         String sql="select * from account where username ='"+a1+"'";
@@ -61,7 +61,6 @@ public class reset extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,e);
         }
     }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -91,7 +90,11 @@ public class reset extends javax.swing.JFrame {
 
         jLabel2.setText("Name");
 
+        jTextField2.setEnabled(false);
+
         jLabel3.setText("Sequrity question");
+
+        jTextField3.setEnabled(false);
 
         jLabel4.setText("answer");
 
@@ -131,7 +134,7 @@ public class reset extends javax.swing.JFrame {
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
                             .addComponent(jTextField5))
                         .addGap(6, 6, 6))
                     .addGroup(layout.createSequentialGroup()
@@ -141,11 +144,9 @@ public class reset extends javax.swing.JFrame {
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField3)
-                            .addComponent(jTextField2))
+                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
+                            .addComponent(jTextField2)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)

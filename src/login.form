@@ -33,7 +33,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="118" max="32767" attributes="0"/>
+              <EmptySpace pref="108" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -82,10 +82,9 @@
                           </Group>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jPasswordField1" max="32767" attributes="0"/>
+                              <Component id="jPasswordField1" pref="130" max="32767" attributes="0"/>
                               <Component id="jTextField1" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
@@ -184,7 +183,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="reset password"/>
+            <Property name="text" type="java.lang.String" value="Forgot  password"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
@@ -192,9 +191,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JPasswordField" name="jPasswordField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
