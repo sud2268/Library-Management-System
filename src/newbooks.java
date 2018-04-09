@@ -178,7 +178,7 @@ public class newbooks extends javax.swing.JFrame {
             pst.setString(5,jTextField4.getText());
             pst.setString(6,jTextField5.getText());
             pst.execute();
-            JOptionPane.showMessageDialog(null,"new account created"); 
+            JOptionPane.showMessageDialog(null,"NEW BOOK ADDED TO DATABSE"); 
         }catch(HeadlessException | SQLException e){
             JOptionPane.showMessageDialog(null,e);
         }
