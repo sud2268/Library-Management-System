@@ -11,6 +11,8 @@
 import java.awt.HeadlessException;
 import java.sql.*;
 import java.util.Random;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 public class student extends javax.swing.JFrame {
     Connection conn;
@@ -22,6 +24,8 @@ public class student extends javax.swing.JFrame {
      */
     public student() {
         super("New_Book   ");
+        setContentPane(new JLabel(new ImageIcon("C:\\Users\\sudhanshu kumar\\Pictures\\20.jpg")));
+        
         initComponents();
         conn= jconnect.ConnectDb();
         Random();

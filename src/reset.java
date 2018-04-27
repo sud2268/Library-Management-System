@@ -10,6 +10,8 @@
  */
 import java.awt.HeadlessException;
 import java.sql.*;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 public class reset extends javax.swing.JFrame {
     Connection conn;
@@ -21,6 +23,7 @@ public class reset extends javax.swing.JFrame {
      */
     public reset() {
         super("SignUp   ");
+         setContentPane(new JLabel(new ImageIcon("C:\\Users\\sudhanshu kumar\\Pictures\\20.jpg")));
         initComponents();
         conn= jconnect.ConnectDb();
         

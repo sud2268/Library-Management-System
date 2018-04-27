@@ -9,6 +9,8 @@
  * @author amitcs
  */
 import java.sql.*;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 public class Home extends javax.swing.JFrame {
     Connection conn;
@@ -18,6 +20,7 @@ public class Home extends javax.swing.JFrame {
      * Creates new form Home
      */
     public Home() {
+         setContentPane(new JLabel(new ImageIcon("C:\\Users\\sudhanshu kumar\\Pictures\\18.jpg")));
         initComponents();
     }
 
@@ -98,7 +101,7 @@ public class Home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("about");
 
         jMenuItem4.setText("about");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {

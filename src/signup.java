@@ -9,6 +9,8 @@
  * @author sudhanshu kumar
  */
 import java.sql.*;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 public class signup extends javax.swing.JFrame {
     Connection conn;
@@ -21,6 +23,7 @@ public class signup extends javax.swing.JFrame {
     
     public signup() {
         super("SignUp   ");
+         setContentPane(new JLabel(new ImageIcon("C:\\Users\\sudhanshu kumar\\Pictures\\20.jpg")));
         initComponents();
         conn= jconnect.ConnectDb();
     }
