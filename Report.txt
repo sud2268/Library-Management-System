@@ -1,0 +1,12 @@
+TITLE --Library Management Project
+Group Members--1.AMIT KUMAR SINGH
+               2.AASHISH MALIK
+               3.SUDHANSHU KUMAR
+OBJECTIVE-- To make a project that keep record of book isssued from library .We have made separate acoounts of students, this 
+            will keep record of number of book issued and information about book.
+            We have also included features like forget password ,reset password,sign up etc.
+            By using our project librarians can make their world a better place.
+Software -- For our project we have used 
+            1.Netbeans IDE
+            2.SQLite (to store our data)
+Time taken--We have completed our project in about two weeks.
